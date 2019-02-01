@@ -1,0 +1,314 @@
+* {
+    outline: none;
+    cursor: none;
+}
+
+body {
+    background-color: #777777;
+    min-width: 1000px;
+}
+
+.page_center {
+    width: 100%;
+    margin: 0px auto;
+}
+
+/*页面div分栏*/
+#nav {
+    height: 200px;
+    width: 100%;
+    float: left;
+}
+
+#left {
+    width: 40%;
+    height: 600px;
+    float: left;
+}
+
+#middle {
+    position: relative;
+    width: 20%;
+    height: 600px;
+    float: left;
+}
+
+#right {
+    width: 40%;
+    height: 600px;
+    float: left;
+}
+
+footer {
+    width: 100%;
+    height: 150px;
+    float: left;
+}
+
+/*页面div分栏*/
+
+/*nav*/
+/*logo图片*/
+#logo {
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+#configure {
+    float: right;
+    width: 40px;
+    margin-top: 40px;
+    margin-right: 70px;
+}
+
+/*nav*/
+
+/*产品特性描述button*/
+
+#left section {
+    height: 110px;
+}
+
+#left section h3 {
+    /*opacity: 1;*/
+    position: absolute;
+    top: 0px;
+    width: max-content;
+    max-width: 400px;
+    left: 170px;
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: left;
+    padding: 5px;
+    outline: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 0px;
+    background-color: #088cb7;
+    color: aliceblue;
+    letter-spacing: .1em;
+}
+
+#left section h3:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    right: 100%;
+    top: 0px;
+    outline: none;
+    border-top: 0px solid transparent;
+    border-right: 26px solid #088cb7;
+    border-bottom: 13px solid transparent;
+}
+
+#left section div {
+    /*width: 10px;*/
+    height: 25px;
+    background-color: #043989;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: -40px;
+    float: left;
+    display: inline;
+}
+
+/*feature button*/
+.featureBtn {
+    position: relative;
+    width: 130px;
+    height: 80px;
+    border: 0px;
+    margin-left: 50px;
+    border-radius: 10px;
+    background: #043989;
+}
+
+.featureBtn:before, .featureBtn:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 140px;
+    height: 90px;
+    top: -5px;
+    left: -5px;
+    border: 3px solid #01AAE5;
+    z-index: 10;
+    box-sizing: border-box;
+    -webkit-animation: clipAni 4s infinite linear;
+}
+
+.featureBtn:before {
+    -webkit-animation-delay: 2s;
+}
+
+@keyframes clipAni {
+    0%, 100% {
+        clip: rect(0px, 140px, 90px, 137px);
+    }
+    25% {
+        clip: rect(0px, 140px, 3px, 0px);
+    }
+    50% {
+        clip: rect(0px, 3px, 90px, 0px);
+    }
+    75% {
+        clip: rect(87px, 140px, 90px, 0px);
+    }
+}
+
+.featureBtn img {
+    height: 50px;
+    max-width: 80px;
+    margin-top: 5px;
+}
+
+.featureBtn h2 {
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 10px;
+    color: white;
+    letter-spacing: .1em;
+    margin-top: 3px;
+}
+
+/*产品特性描述button*/
+/*feature button*/
+
+/*配置描述button*/
+/*configure button*/
+#right {
+    margin-top: 50px;
+}
+
+#right section {
+    float: right;
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.configureBtn {
+    position: relative;
+    float: right;
+    width: 75px;
+    height: 75px;
+    border: 0px;
+    border-radius: 10px;
+    margin-right: 50px;
+    background: #043989;
+}
+
+.configureBtnDot {
+    position: absolute;
+    top: 25px;
+    left: -35px;
+    width: 25px;
+    animation: twinkle 1500ms infinite;
+}
+
+@keyframes twinkle {
+    from {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1.0;
+    }
+}
+
+.configureBtnIcon {
+    height: 45px;
+    max-width: 60px;
+    margin-top: 5px;
+}
+
+.configureBtn h2 {
+    font-size: 12px;
+    font-weight: lighter;
+    line-height: 0px;
+    color: white;
+    letter-spacing: .1em;
+}
+
+/*滚动字幕*/
+#comment {
+    position: relative;
+    float: right;
+    width: 640px;
+    height: 100px;
+    margin-top: 80px;
+    margin-right: 50px;
+    border: #043989 solid 1.5px;
+    border-radius: 5px;
+}
+
+#comment marquee {
+    float: right;
+    width: 600px;
+    height: 80px;
+    margin-top: 10px;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+#comment marquee p {
+    font-size: 15px;
+    font-weight: lighter;
+    text-indent: 2em;
+    color: #043989;
+    font-weight: normal;
+}
+
+#comment img {
+    position: absolute;
+    left: -25px;
+    top: -25px;
+    width: 50px;
+    background-color: white;
+    border: 0px;
+    padding: 0px;
+    border-radius: 25px;
+}
+
+/*两个configure按钮现实的元素*/
+#configureDisplay {
+    position: absolute;
+    right: 200px;
+    top: 150px;
+    width: 500px;
+    height: 500px;
+}
+
+#configureDisplay img {
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    float: right;
+    border: #043989 solid 1.5px;
+    border-radius: 5px;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+#configureDisplay p {
+    position: relative;
+    top: 50%;
+    float: right;
+    transform: translateY(-50%);
+    width: 80%;
+    padding: 10px;
+    border: #043989 solid 1.5px;
+    border-radius: 5px;
+    max-width: 500px;
+    max-height: 500px;
+
+    text-indent: 2em;
+    color: #043989;
+    font-weight: normal;
+    letter-spacing: .1em;
+}
